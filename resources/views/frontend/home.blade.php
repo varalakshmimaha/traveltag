@@ -443,7 +443,7 @@
                         <div class="dest-divider"></div>
                         <div class="dest-btns">
                             <a href="{{ route('programs.show', $prog->slug) }}" class="btn-explore">Explore</a>
-                            <a href="{{ route('contact') }}" class="btn-plan">Plan Trip</a>
+                            <a href="{{ route('contact') }}" class="btn-plan">{{ $loop->odd ? 'Book School Consultation' : 'Talk to Trip Expert' }}</a>
                         </div>
                     </div>
                 </div>
@@ -473,7 +473,7 @@
                         <div class="dest-divider"></div>
                         <div class="dest-btns">
                             <a href="{{ route('programs.index') }}" class="btn-explore">Explore</a>
-                            <a href="{{ route('contact') }}" class="btn-plan">Plan Trip</a>
+                            <a href="{{ route('contact') }}" class="btn-plan">{{ $index % 2 === 0 ? 'Book School Consultation' : 'Talk to Trip Expert' }}</a>
                         </div>
                     </div>
                 </div>
@@ -573,7 +573,7 @@
     <div class="container">
         <div class="text-center mb-2">
             <div class="section-label">News & Blogs</div>
-            <h2 class="section-title">Last Minute Amazing Deals</h2>
+            <h2 class="section-title">School Travel Insights</h2>
             <div class="section-line section-line-center"></div>
         </div>
         <div class="row g-4 mt-3">

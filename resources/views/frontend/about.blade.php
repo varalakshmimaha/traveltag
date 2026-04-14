@@ -846,7 +846,7 @@
                             <i class="bi bi-info-circle"></i> Learn Our Commitment
                         </a>
                         <a href="{{ route('contact') }}" class="founder-cta-btn-primary">
-                            <i class="bi bi-arrow-right"></i> Get In Touch Now
+                            <i class="bi bi-arrow-right"></i> Book School Consultation
                         </a>
                     </div>
                     

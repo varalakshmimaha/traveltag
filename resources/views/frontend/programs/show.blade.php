@@ -205,7 +205,7 @@
                                 <div class="mb-3">
                                     <textarea name="message" class="form-control" rows="3" placeholder="Your Message (optional)">Enquiry about: {{ $program->title }}</textarea>
                                 </div>
-                                <button type="submit" class="btn-enquire"><i class="bi bi-send-fill"></i> Send Enquiry</button>
+                                <button type="submit" class="btn-enquire"><i class="bi bi-send-fill"></i> Talk to Trip Expert</button>
                             </form>
                             <div class="eq-trust"><i class="bi bi-shield-check"></i> Your details are safe with us. No spam.</div>
                         </div>

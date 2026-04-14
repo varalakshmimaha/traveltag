@@ -123,7 +123,7 @@
                             @error('message') <small class="text-danger">{{ $message }}</small> @enderror
                         </div>
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary btn-lg rounded-pill px-5" style="font-size:.9rem;">Send Message</button>
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill px-5" style="font-size:.9rem;">Book School Consultation</button>
                         </div>
                     </div>
                 </form>
