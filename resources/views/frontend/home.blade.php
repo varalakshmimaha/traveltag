@@ -7,13 +7,13 @@
 <style>
     /* ===== HERO OVERRIDES ===== */
     .hero-section {
-        background: url('/storage/hero_background.png') center/cover no-repeat;
+        background: url('/images/hero_background.png') center/cover no-repeat;
         min-height: 620px; position: relative; overflow: hidden; padding: 3rem 0 4rem;
         width: 100%;
     }
     .hero-section .hero-right-img {
         position: absolute; top: 0; right: 0; bottom: 0; width: 55%;
-        background: url('/storage/HERO.png') right center/contain no-repeat;
+        background: url('/images/HERO.png') right center/contain no-repeat;
         z-index: 1;
     }
     .hero-section::before {
@@ -107,7 +107,7 @@
         <div class="row align-items-center g-4">
             <div class="col-lg-5 pe-0">
                 <div class="home-about-image-wrap">
-                    <img src="{{ asset('storage/aboutusimage.png') }}" alt="Students learning" class="home-about-image">
+                    <img src="{{ asset('images/aboutusimage.png') }}" alt="Students learning" class="home-about-image">
                 </div>
             </div>
             <div class="col-lg-7">
@@ -292,25 +292,25 @@
         <div class="row g-4">
             <div class="col-md-3 col-6">
                 <div class="why-card">
-                    <img src="{{ asset('storage/2Q0A2660.JPG') }}" alt="Experiential Learning">
+                    <img src="{{ asset('images/2Q0A2660.JPG') }}" alt="Experiential Learning">
                     <div class="why-body"><h6>Experiential Learning</h6><p>Hands-on experiences that bring textbook concepts to life through real-world exploration.</p></div>
                 </div>
             </div>
             <div class="col-md-3 col-6">
                 <div class="why-card">
-                    <img src="{{ asset('storage/2Q0A2679.JPG') }}" alt="Real-World Exposure">
+                    <img src="{{ asset('images/2Q0A2679.JPG') }}" alt="Real-World Exposure">
                     <div class="why-body"><h6>Real-World Exposure</h6><p>Students interact with diverse cultures, industries, and environments beyond the classroom.</p></div>
                 </div>
             </div>
             <div class="col-md-3 col-6">
                 <div class="why-card">
-                    <img src="{{ asset('storage/2Q0A2703.JPG') }}" alt="Collaboration & Teamwork">
+                    <img src="{{ asset('images/2Q0A2703.JPG') }}" alt="Collaboration & Teamwork">
                     <div class="why-body"><h6>Collaboration & Teamwork</h6><p>Programs designed to build teamwork, leadership, and collaborative skills.</p></div>
                 </div>
             </div>
             <div class="col-md-3 col-6">
                 <div class="why-card">
-                    <img src="{{ asset('storage/2Q0A2736.JPG') }}" alt="Structured & Safe">
+                    <img src="{{ asset('images/2Q0A2736.JPG') }}" alt="Structured & Safe">
                     <div class="why-body"><h6>Structured & Safe Execution</h6><p>Every trip follows defined protocols with verified partners and trained coordinators.</p></div>
                 </div>
             </div>
@@ -324,8 +324,8 @@
         <div class="row align-items-center g-5">
             <div class="col-lg-6">
                 <div style="position:relative;">
-                    <img src="{{ asset('storage/2Q0A2766.JPG') }}" alt="Travel experience" style="width:100%;height:420px;object-fit:cover;border-radius:.75rem;box-shadow:0 15px 40px rgba(0,0,0,.12);">
-                    <img src="{{ asset('storage/2Q0A2781.JPG') }}" alt="Adventure" style="position:absolute;bottom:-30px;right:-20px;width:200px;height:150px;object-fit:cover;border-radius:.75rem;border:4px solid #fff;box-shadow:0 8px 25px rgba(0,0,0,.15);">
+                    <img src="{{ asset('images/2Q0A2766.JPG') }}" alt="Travel experience" style="width:100%;height:420px;object-fit:cover;border-radius:.75rem;box-shadow:0 15px 40px rgba(0,0,0,.12);">
+                    <img src="{{ asset('images/2Q0A2781.JPG') }}" alt="Adventure" style="position:absolute;bottom:-30px;right:-20px;width:200px;height:150px;object-fit:cover;border-radius:.75rem;border:4px solid #fff;box-shadow:0 8px 25px rgba(0,0,0,.15);">
                 </div>
             </div>
             <div class="col-lg-6">
@@ -355,19 +355,19 @@
         <div class="row g-4">
             <div class="col-md-4">
                 <div class="struct-card">
-                    <img src="{{ asset('storage/2Q0A2992.JPG') }}" alt="Standardized formats">
+                    <img src="{{ asset('images/2Q0A2992.JPG') }}" alt="Standardized formats">
                     <div class="struct-body"><h6>Standardized Program Formats</h6><p>Every trip follows a defined template ensuring consistency across all programs and institutions.</p></div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="struct-card">
-                    <img src="{{ asset('storage/2Q0A3081.JPG') }}" alt="Execution frameworks">
+                    <img src="{{ asset('images/2Q0A3081.JPG') }}" alt="Execution frameworks">
                     <div class="struct-body"><h6>Defined Execution Frameworks</h6><p>Clear SOPs, checklists, and coordination protocols for every stage of the journey.</p></div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="struct-card">
-                    <img src="{{ asset('storage/2Q0A3175.JPG') }}" alt="Repeatable models">
+                    <img src="{{ asset('images/2Q0A3175.JPG') }}" alt="Repeatable models">
                     <div class="struct-body"><h6>Repeatable Travel Models</h6><p>Scalable programs designed to be replicated reliably across schools and destinations.</p></div>
                 </div>
             </div>
@@ -634,7 +634,7 @@
         <div class="book-cta-wrap">
             <div class="row g-0 align-items-stretch">
                 <div class="col-lg-6 book-cta-img">
-                    <img src="{{ asset('storage/2Q0A2679.JPG') }}" alt="Plan your school trip">
+                    <img src="{{ asset('images/2Q0A2679.JPG') }}" alt="Plan your school trip">
                     <div class="book-cta-img-overlay">
                         <div class="book-cta-badge"><i class="bi bi-patch-check-fill me-2"></i>100+ Schools Trust Us</div>
                         <h3>Ready to Plan Your Next School Trip?</h3>

@@ -131,9 +131,10 @@
     }
     .leis-solution-card .lsc-img {
         position: relative; width: 100%; height: 200px; overflow: hidden;
+        flex-shrink: 0;
     }
     .leis-solution-card .lsc-img img {
-        width: 100%; height: 100%; object-fit: cover;
+        width: 100%; height: 100%; object-fit: cover; display: block;
         transition: transform .6s ease;
     }
     .leis-solution-card:hover .lsc-img img { transform: scale(1.08); }
@@ -346,7 +347,7 @@
 {{-- ===== 1. PAGE BANNER + BREADCRUMB ===== --}}
 <section class="leis-banner">
     <div class="leis-banner-bg">
-        <img src="{{ asset('storage/2Q0A2781.JPG') }}" alt="Leisure banner">
+        <img src="{{ asset('images/2Q0A2781.JPG') }}" alt="Leisure banner">
     </div>
     <div class="container text-center">
         <nav aria-label="breadcrumb">
@@ -366,7 +367,7 @@
             {{-- Image Left --}}
             <div class="col-lg-6 reveal reveal-left">
                 <div class="intro-img-wrap">
-                    <img src="{{ asset('storage/2Q0A2992.JPG') }}" alt="Curated Leisure Travel">
+                    <img src="{{ asset('images/2Q0A2992.JPG') }}" alt="Curated Leisure Travel">
                     <span class="intro-badge"><i class="bi bi-compass-fill"></i> Leisure Offerings</span>
                 </div>
             </div>
@@ -406,7 +407,7 @@
             {{-- Card 1 --}}
             <div class="leis-solution-card reveal reveal-up">
                 <div class="lsc-img">
-                    <img src="{{ asset('storage/2Q0A3081.JPG') }}" alt="Family Holidays">
+                    <img src="{{ asset('images/2Q0A3081.JPG') }}" alt="Family Holidays">
                 </div>
                 <div class="lsc-body">
                     <div class="lsc-icon"><i class="bi bi-people-fill"></i></div>
@@ -425,7 +426,7 @@
             {{-- Card 2 --}}
             <div class="leis-solution-card reveal reveal-up">
                 <div class="lsc-img">
-                    <img src="{{ asset('storage/2Q0A3175.JPG') }}" alt="Weekend Getaways">
+                    <img src="{{ asset('images/2Q0A3175.JPG') }}" alt="Weekend Getaways">
                 </div>
                 <div class="lsc-body">
                     <div class="lsc-icon"><i class="bi bi-sun-fill"></i></div>
@@ -444,7 +445,7 @@
             {{-- Card 3 --}}
             <div class="leis-solution-card reveal reveal-up">
                 <div class="lsc-img">
-                    <img src="{{ asset('storage/2Q0A3199.JPG') }}" alt="Domestic and International Holidays">
+                    <img src="{{ asset('images/2Q0A3199.JPG') }}" alt="Domestic and International Holidays">
                 </div>
                 <div class="lsc-body">
                     <div class="lsc-icon"><i class="bi bi-airplane-fill"></i></div>
@@ -463,7 +464,7 @@
             {{-- Card 4 --}}
             <div class="leis-solution-card reveal reveal-up">
                 <div class="lsc-img">
-                    <img src="{{ asset('storage/2Q0A3460.JPG') }}" alt="Customized Itineraries">
+                    <img src="{{ asset('images/2Q0A3460.JPG') }}" alt="Customized Itineraries">
                 </div>
                 <div class="lsc-body">
                     <div class="lsc-icon"><i class="bi bi-stars"></i></div>
@@ -528,7 +529,7 @@
     <div class="container-fluid px-3">
         <div class="leis-cta-banner reveal reveal-up">
             <div class="leis-cta-bg">
-                <img src="{{ asset('storage/2Q0A3514.JPG') }}" alt="Holiday background">
+                <img src="{{ asset('images/2Q0A3514.JPG') }}" alt="Holiday background">
             </div>
             <h2>Ready for your next getaway?</h2>
             <p>Discover curated leisure experiences designed around you. Let us help you plan a journey that is seamless, memorable, and tailored just for you.</p>

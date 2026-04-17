@@ -441,8 +441,8 @@
             </div>
             <div class="col-lg-6 anim fade-right">
                 <div class="intro-img-wrap">
-                      <img src="{{ asset('storage/aboutusimage.png') }}" alt="Students on cultural trip" class="img-back">
-                      <img src="{{ asset('storage/aboutusimage.png') }}" alt="Students at beach destination" class="img-front">
+                      <img src="{{ asset('images/aboutusimage.png') }}" alt="Students on cultural trip" class="img-back">
+                      <img src="{{ asset('images/aboutusimage.png') }}" alt="Students at beach destination" class="img-front">
                       
                       <div class="pop-badge">
                           <i class="bi bi-geo-alt-fill"></i> Paradise on Earth
@@ -585,7 +585,7 @@
         
         <div class="safety-circle-wrap">
             <!-- Center Image -->
-            <img src="{{ asset('storage/programs/kerala-backwaters-culture.jpg') }}" alt="Students on travel" class="safety-center-img anim scale-in">
+            <img src="{{ asset('images/programs/kerala-backwaters-culture.jpg') }}" alt="Students on travel" class="safety-center-img anim scale-in">
             
             <!-- Top Left Card -->
             <div class="safety-card top-left anim fade-up anim-delay-1">
