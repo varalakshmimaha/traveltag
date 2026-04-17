@@ -22,4 +22,14 @@ class HomeController extends Controller
     {
         return view('frontend.about');
     }
+
+    public function corporates()
+    {
+        return view('frontend.corporates');
+    }
+
+    public function leisure()
+    {
+        return view('frontend.leisure');
+    }
 }

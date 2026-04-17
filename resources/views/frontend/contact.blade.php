@@ -1,5 +1,7 @@
 @extends('frontend.layouts.app')
-@section('title', 'Contact Us')
+@section('title', 'Contact Us - Book a School Trip')
+@section('meta_description', 'Contact TravelTag to plan your next school trip or educational tour. Book a consultation for safe, structured student travel programs from Bangalore.')
+@section('meta_keywords', 'contact TravelTag, book school trip, school tour enquiry Bangalore, student travel consultation, educational tour booking')
 
 @push('styles')
 <style>

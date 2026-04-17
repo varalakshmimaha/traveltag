@@ -1,5 +1,7 @@
 @extends('frontend.layouts.app')
-@section('title', 'Gallery')
+@section('title', 'Gallery - School Trip Photos')
+@section('meta_description', 'Browse photos from TravelTag\'s school trips and educational tours. See students exploring heritage sites, nature trails, and cultural destinations across India.')
+@section('meta_keywords', 'school trip photos, educational tour gallery, student travel images, school excursion pictures, TravelTag gallery')
 
 @push('styles')
 <style>

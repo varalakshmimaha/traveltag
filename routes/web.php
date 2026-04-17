@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [Frontend\HomeController::class, 'index'])->name('home');
 Route::get('/about', [Frontend\HomeController::class, 'about'])->name('about');
+Route::get('/corporates', [Frontend\HomeController::class, 'corporates'])->name('corporates');
+Route::get('/leisure', [Frontend\HomeController::class, 'leisure'])->name('leisure');
 
 Route::get('/programs', [Frontend\ProgramController::class, 'index'])->name('programs.index');
 Route::get('/programs/{slug}', [Frontend\ProgramController::class, 'show'])->name('programs.show');

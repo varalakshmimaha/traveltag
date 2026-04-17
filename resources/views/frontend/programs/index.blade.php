@@ -1,5 +1,7 @@
 @extends('frontend.layouts.app')
-@section('title', request('category') ? ucfirst(str_replace('-', ' ', request('category'))) : 'Programs')
+@section('title', request('category') ? ucfirst(str_replace('-', ' ', request('category'))) . ' - Student Travel Programs' : 'Student Travel Programs')
+@section('meta_description', 'Explore TravelTag\'s student travel programs — day trips, domestic tours, and international educational trips. Safe, structured school excursions from Bangalore.')
+@section('meta_keywords', 'student travel programs, school trip packages, day trips for students, domestic school tours, international student tours, educational excursions Bangalore')
 
 @push('styles')
 <style>

@@ -1,5 +1,7 @@
 @extends('frontend.layouts.app')
-@section('title', $program->title)
+@section('title', $program->title . ' - Student Travel Program')
+@section('meta_description', Str::limit(strip_tags($program->description ?? 'Explore ' . $program->title . ' with TravelTag — safe, structured student travel from Bangalore.'), 160))
+@section('meta_keywords', $program->title . ', school trip, educational tour, student travel, ' . ($program->category->name ?? '') . ', TravelTag')
 
 @push('styles')
 <style>
@@ -182,7 +184,7 @@
                     {{-- Enquiry Form --}}
                     <div class="enquiry-card mb-4">
                         <div class="eq-header">
-                            <h5><i class="bi bi-envelope-paper me-1"></i> Enquire About This Trip</h5>
+                            <h5><i class="bi bi-envelope-paper me-1"></i> Book School Consultation</h5>
                             <p>We'll get back to you within 24 hours</p>
                         </div>
                         <div class="eq-body">

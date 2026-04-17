@@ -1,5 +1,7 @@
 @extends('frontend.layouts.app')
-@section('title', 'Home')
+@section('title', 'School Trips & Educational Tours from Bangalore')
+@section('meta_description', 'TravelTag organizes safe, structured school trips and educational tours from Bangalore. Trusted by 100+ schools for student travel programs across India and internationally.')
+@section('meta_keywords', 'school trips Bangalore, educational tours India, student travel programs, school excursions, safe school trips, structured student tours, school picnic organizer Bangalore')
 
 @push('styles')
 <style>
@@ -138,28 +140,28 @@
         <div class="row g-4">
             <div class="col-md-3 col-6">
                 <div class="value-item">
-                    <div class="v-icon" style="background:#89BFF3; border-radius:1rem; box-shadow:0 10px 30px rgba(137,191,243,.3); width:80px; height:80px; display:flex; align-items:center; justify-content:center; margin:0 auto 1.5rem;"><i class="bi bi-person-check" style="font-size:2.2rem; color:#fff;"></i></div>
+                    <div class="v-icon" style="background:#89BFF3; border-radius:1rem; box-shadow:0 10px 30px rgba(137,191,243,.3); width:80px; height:80px; display:flex; align-items:center; justify-content:center; margin:0 auto 1.5rem;"><i class="bi bi-shield-check" style="font-size:2.2rem; color:#fff;"></i></div>
                     <h6>Safe by Design</h6>
                     <p>Safety is built into every stage of the journey through defined protocols and verified partners</p>
                 </div>
             </div>
             <div class="col-md-3 col-6">
                 <div class="value-item">
-                    <div class="v-icon" style="background:#89BFF3; border-radius:1rem; box-shadow:0 10px 30px rgba(137,191,243,.3); width:80px; height:80px; display:flex; align-items:center; justify-content:center; margin:0 auto 1.5rem;"><i class="bi bi-map" style="font-size:2.2rem; color:#fff;"></i></div>
+                    <div class="v-icon" style="background:#89BFF3; border-radius:1rem; box-shadow:0 10px 30px rgba(137,191,243,.3); width:80px; height:80px; display:flex; align-items:center; justify-content:center; margin:0 auto 1.5rem;"><i class="bi bi-clipboard-check" style="font-size:2.2rem; color:#fff;"></i></div>
                     <h6>Structured Execution</h6>
                     <p>Process-driven planning and disciplined execution ensure smooth and reliable travel programs</p>
                 </div>
             </div>
             <div class="col-md-3 col-6">
                 <div class="value-item">
-                    <div class="v-icon" style="background:#89BFF3; border-radius:1rem; box-shadow:0 10px 30px rgba(137,191,243,.3); width:80px; height:80px; display:flex; align-items:center; justify-content:center; margin:0 auto 1.5rem;"><i class="bi bi-triangle-half" style="font-size:2.2rem; color:#fff;"></i></div>
+                    <div class="v-icon" style="background:#89BFF3; border-radius:1rem; box-shadow:0 10px 30px rgba(137,191,243,.3); width:80px; height:80px; display:flex; align-items:center; justify-content:center; margin:0 auto 1.5rem;"><i class="bi bi-eye" style="font-size:2.2rem; color:#fff;"></i></div>
                     <h6>Transparent for Stakeholders</h6>
                     <p>Clear communication and visibility for schools, parents, and coordinators at every step</p>
                 </div>
             </div>
             <div class="col-md-3 col-6">
                 <div class="value-item">
-                    <div class="v-icon" style="background:#89BFF3; border-radius:1rem; box-shadow:0 10px 30px rgba(137,191,243,.3); width:80px; height:80px; display:flex; align-items:center; justify-content:center; margin:0 auto 1.5rem;"><i class="bi bi-clock" style="font-size:2.2rem; color:#fff;"></i></div>
+                    <div class="v-icon" style="background:#89BFF3; border-radius:1rem; box-shadow:0 10px 30px rgba(137,191,243,.3); width:80px; height:80px; display:flex; align-items:center; justify-content:center; margin:0 auto 1.5rem;"><i class="bi bi-lightbulb" style="font-size:2.2rem; color:#fff;"></i></div>
                     <h6>Meaningful for Students</h6>
                     <p>Travel experiences designed to deliver learning, exposure, and real-world engagement</p>
                 </div>
@@ -290,25 +292,25 @@
         <div class="row g-4">
             <div class="col-md-3 col-6">
                 <div class="why-card">
-                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=400&h=300&fit=crop" alt="Experiential Learning">
+                    <img src="{{ asset('storage/2Q0A2660.JPG') }}" alt="Experiential Learning">
                     <div class="why-body"><h6>Experiential Learning</h6><p>Hands-on experiences that bring textbook concepts to life through real-world exploration.</p></div>
                 </div>
             </div>
             <div class="col-md-3 col-6">
                 <div class="why-card">
-                    <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=400&h=300&fit=crop" alt="Real-World Exposure">
+                    <img src="{{ asset('storage/2Q0A2679.JPG') }}" alt="Real-World Exposure">
                     <div class="why-body"><h6>Real-World Exposure</h6><p>Students interact with diverse cultures, industries, and environments beyond the classroom.</p></div>
                 </div>
             </div>
             <div class="col-md-3 col-6">
                 <div class="why-card">
-                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&h=300&fit=crop" alt="Collaboration & Teamwork">
+                    <img src="{{ asset('storage/2Q0A2703.JPG') }}" alt="Collaboration & Teamwork">
                     <div class="why-body"><h6>Collaboration & Teamwork</h6><p>Programs designed to build teamwork, leadership, and collaborative skills.</p></div>
                 </div>
             </div>
             <div class="col-md-3 col-6">
                 <div class="why-card">
-                    <img src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?w=400&h=300&fit=crop" alt="Structured & Safe">
+                    <img src="{{ asset('storage/2Q0A2736.JPG') }}" alt="Structured & Safe">
                     <div class="why-body"><h6>Structured & Safe Execution</h6><p>Every trip follows defined protocols with verified partners and trained coordinators.</p></div>
                 </div>
             </div>
@@ -322,8 +324,8 @@
         <div class="row align-items-center g-5">
             <div class="col-lg-6">
                 <div style="position:relative;">
-                    <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=600&h=450&fit=crop" alt="Travel experience" style="width:100%;height:420px;object-fit:cover;border-radius:.75rem;box-shadow:0 15px 40px rgba(0,0,0,.12);">
-                    <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=300&h=200&fit=crop" alt="Adventure" style="position:absolute;bottom:-30px;right:-20px;width:200px;height:150px;object-fit:cover;border-radius:.75rem;border:4px solid #fff;box-shadow:0 8px 25px rgba(0,0,0,.15);">
+                    <img src="{{ asset('storage/2Q0A2766.JPG') }}" alt="Travel experience" style="width:100%;height:420px;object-fit:cover;border-radius:.75rem;box-shadow:0 15px 40px rgba(0,0,0,.12);">
+                    <img src="{{ asset('storage/2Q0A2781.JPG') }}" alt="Adventure" style="position:absolute;bottom:-30px;right:-20px;width:200px;height:150px;object-fit:cover;border-radius:.75rem;border:4px solid #fff;box-shadow:0 8px 25px rgba(0,0,0,.15);">
                 </div>
             </div>
             <div class="col-lg-6">
@@ -353,19 +355,19 @@
         <div class="row g-4">
             <div class="col-md-4">
                 <div class="struct-card">
-                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=300&fit=crop" alt="Standardized formats">
+                    <img src="{{ asset('storage/2Q0A2992.JPG') }}" alt="Standardized formats">
                     <div class="struct-body"><h6>Standardized Program Formats</h6><p>Every trip follows a defined template ensuring consistency across all programs and institutions.</p></div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="struct-card">
-                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop" alt="Execution frameworks">
+                    <img src="{{ asset('storage/2Q0A3081.JPG') }}" alt="Execution frameworks">
                     <div class="struct-body"><h6>Defined Execution Frameworks</h6><p>Clear SOPs, checklists, and coordination protocols for every stage of the journey.</p></div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="struct-card">
-                    <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=500&h=300&fit=crop" alt="Repeatable models">
+                    <img src="{{ asset('storage/2Q0A3175.JPG') }}" alt="Repeatable models">
                     <div class="struct-body"><h6>Repeatable Travel Models</h6><p>Scalable programs designed to be replicated reliably across schools and destinations.</p></div>
                 </div>
             </div>
@@ -442,8 +444,7 @@
                         <p class="dest-desc">{{ Str::limit($prog->short_description ?? $prog->description ?? 'Explore this amazing destination with our structured student travel programs.', 120) }}</p>
                         <div class="dest-divider"></div>
                         <div class="dest-btns">
-                            <a href="{{ route('programs.show', $prog->slug) }}" class="btn-explore">Explore</a>
-                            <a href="{{ route('contact') }}" class="btn-plan">{{ $loop->odd ? 'Book School Consultation' : 'Talk to Trip Expert' }}</a>
+                            <a href="{{ route('programs.show', $prog->slug) }}" class="btn-plan">Explore</a>
                         </div>
                     </div>
                 </div>
@@ -472,8 +473,7 @@
                         <p class="dest-desc">{{ $dest['desc'] }}</p>
                         <div class="dest-divider"></div>
                         <div class="dest-btns">
-                            <a href="{{ route('programs.index') }}" class="btn-explore">Explore</a>
-                            <a href="{{ route('contact') }}" class="btn-plan">{{ $index % 2 === 0 ? 'Book School Consultation' : 'Talk to Trip Expert' }}</a>
+                            <a href="{{ route('programs.index') }}" class="btn-plan">Explore</a>
                         </div>
                     </div>
                 </div>
@@ -584,7 +584,15 @@
                     @if($blog->image)
                         <img src="{{ asset('storage/' . $blog->image) }}">
                     @else
-                        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=500&h=300&fit=crop" alt="{{ $blog->title }}">
+                        @php
+                            $fallbackImages = [
+                                'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=500&h=300&fit=crop',
+                                'https://images.unsplash.com/photo-1544531586-fde5298cdd40?w=500&h=300&fit=crop',
+                                'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=500&h=300&fit=crop',
+                            ];
+                            $fallbackImg = $fallbackImages[$loop->index % count($fallbackImages)];
+                        @endphp
+                        <img src="{{ $fallbackImg }}" alt="{{ $blog->title }}">
                     @endif
                     <div class="blog-body">
                         <small style="color:var(--primary-dark);font-weight:600;font-size:.75rem;"><i class="bi bi-calendar3 me-1"></i>{{ $blog->created_at->format('M d, Y') }}</small>
@@ -619,5 +627,162 @@
         </div>
     </div>
 </section>
+
+{{-- ===== 12. BOOK CONSULTATION CTA ===== --}}
+<section class="section book-cta-section" style="background:#fff;padding:5rem 0;">
+    <div class="container">
+        <div class="book-cta-wrap">
+            <div class="row g-0 align-items-stretch">
+                <div class="col-lg-6 book-cta-img">
+                    <img src="{{ asset('storage/2Q0A2679.JPG') }}" alt="Plan your school trip">
+                    <div class="book-cta-img-overlay">
+                        <div class="book-cta-badge"><i class="bi bi-patch-check-fill me-2"></i>100+ Schools Trust Us</div>
+                        <h3>Ready to Plan Your Next School Trip?</h3>
+                        <p>Safe, structured, and unforgettable journeys — crafted for every grade and group size.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 book-cta-form">
+                    <div class="form-head">
+                        <span class="form-eyebrow">Book Consultation</span>
+                        <h4>Talk to Our Travel Expert</h4>
+                        <p>Share a few details and our planner will reach out within 24 hours with a tailored itinerary.</p>
+                    </div>
+                    @if(session('success'))
+                        <div class="alert alert-success" style="font-size:.85rem;">{{ session('success') }}</div>
+                    @endif
+                    <form action="{{ route('contact.store') }}" method="POST" class="book-form">
+                        @csrf
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label>School Name</label>
+                                <input type="text" name="name" class="form-control" placeholder="Enter school name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Contact Person</label>
+                                <input type="text" name="phone" class="form-control" placeholder="Full name / phone" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Email Address</label>
+                                <input type="email" name="email" class="form-control" placeholder="you@school.edu" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label>No. of Students</label>
+                                <input type="number" name="students" class="form-control" placeholder="e.g. 45" min="1">
+                            </div>
+                            <div class="col-md-6">
+                                <label>Preferred Destination</label>
+                                <input type="text" name="destination" class="form-control" placeholder="e.g. Ooty, Mysore">
+                            </div>
+                            <div class="col-md-6">
+                                <label>Preferred Date</label>
+                                <input type="date" name="date" class="form-control">
+                            </div>
+                            <div class="col-12">
+                                <label>Message (Optional)</label>
+                                <textarea name="message" class="form-control" rows="2" placeholder="Any additional details about your trip..." required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn-book-submit">
+                                    <i class="bi bi-send-fill me-2"></i>Request Free Consultation
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@push('styles')
+<style>
+    .book-cta-wrap {
+        background: #fff; border-radius: 1.4rem; overflow: hidden;
+        box-shadow: 0 25px 80px rgba(15,23,42,.12);
+        border: 1px solid #eef2f7;
+    }
+    .book-cta-img {
+        position: relative; min-height: 520px; overflow: hidden;
+    }
+    .book-cta-img img {
+        position: absolute; inset: 0; width: 100%; height: 100%;
+        object-fit: cover; display: block;
+    }
+    .book-cta-img::after {
+        content: ''; position: absolute; inset: 0;
+        background: linear-gradient(180deg, rgba(15,23,42,.15) 0%, rgba(15,23,42,.75) 100%);
+    }
+    .book-cta-img-overlay {
+        position: absolute; bottom: 0; left: 0; right: 0; z-index: 2;
+        padding: 2.2rem; color: #fff;
+    }
+    .book-cta-badge {
+        display: inline-flex; align-items: center;
+        background: rgba(137,191,243,.95);
+        color: #0f172a; font-weight: 700; font-size: .72rem;
+        letter-spacing: 1.5px; text-transform: uppercase;
+        padding: .45rem 1rem; border-radius: 2rem;
+        margin-bottom: 1rem;
+    }
+    .book-cta-img-overlay h3 {
+        font-size: 1.6rem; font-weight: 800; color: #fff !important;
+        margin-bottom: .5rem; line-height: 1.3;
+    }
+    .book-cta-img-overlay p {
+        font-size: .9rem; color: rgba(255,255,255,.9);
+        margin: 0; line-height: 1.6;
+    }
+    .book-cta-form {
+        padding: 2.8rem 2.6rem;
+        background: #fff;
+    }
+    .book-cta-form .form-head { margin-bottom: 1.6rem; }
+    .book-cta-form .form-eyebrow {
+        display: inline-block; font-size: .7rem; font-weight: 700;
+        letter-spacing: 3px; text-transform: uppercase;
+        color: var(--dark) !important; margin-bottom: .6rem;
+    }
+    .book-cta-form h4 {
+        font-size: 1.6rem; font-weight: 800; color: var(--dark) !important;
+        margin-bottom: .4rem; line-height: 1.3; font-family: inherit;
+    }
+    .book-cta-form .form-head p {
+        font-size: .85rem; color: #6b7280; margin: 0; line-height: 1.6;
+    }
+    .book-form label {
+        display: block; font-size: .75rem; font-weight: 600;
+        color: #374151; margin-bottom: .35rem;
+        letter-spacing: .3px;
+    }
+    .book-form .form-control {
+        border: 1.5px solid #e5e7eb; border-radius: .6rem;
+        padding: .7rem .9rem; font-size: .9rem;
+        background: #f9fafb; transition: all .25s ease;
+    }
+    .book-form .form-control:focus {
+        border-color: #89BFF3; background: #fff;
+        box-shadow: 0 0 0 3px rgba(137,191,243,.15);
+        outline: none;
+    }
+    .btn-book-submit {
+        display: inline-flex; align-items: center; justify-content: center;
+        width: 100%; background: #89BFF3; color: #fff;
+        border: none; border-radius: .7rem;
+        padding: .9rem 1.4rem; font-size: .95rem; font-weight: 700;
+        transition: all .3s ease;
+        box-shadow: 0 8px 20px rgba(137,191,243,.4);
+        margin-top: .4rem;
+    }
+    .btn-book-submit:hover {
+        background: #6aa8e5; transform: translateY(-2px);
+        box-shadow: 0 12px 28px rgba(137,191,243,.55);
+    }
+    @media (max-width: 991px) {
+        .book-cta-img { min-height: 300px; }
+        .book-cta-form { padding: 2rem 1.6rem; }
+        .book-cta-img-overlay h3 { font-size: 1.35rem; }
+    }
+</style>
+@endpush
 
 @endsection

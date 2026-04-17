@@ -5,7 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title', setting('site_name', 'TravelTag')) - {{ setting('tagline', 'Explore the World') }}</title>
-    <meta name="description" content="@yield('meta_description', setting('site_title', 'Travel Tag') . ' - ' . setting('tagline', 'Explore the World'))">
+    <meta name="description" content="@yield('meta_description', 'TravelTag - India\'s leading school trip organizer. We plan safe, structured educational tours, student travel programs, and school excursions from Bangalore. Trusted by 100+ schools.')">
+    <meta name="keywords" content="@yield('meta_keywords', 'school trips, educational tours, student travel, school excursions, Bangalore school trips, student tour packages, school travel planner, educational travel India, school picnic organizer, student group tours, safe school trips, structured school travel, school trip management, corporate travel, leisure travel')">
+    <meta name="author" content="TravelTag">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ url()->current() }}">
+
+    {{-- Open Graph --}}
+    <meta property="og:title" content="@yield('title', 'TravelTag') - {{ setting('tagline', 'Explore the World') }}">
+    <meta property="og:description" content="@yield('meta_description', 'TravelTag - India\'s leading school trip organizer. Safe, structured educational tours and student travel programs from Bangalore.')">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:site_name" content="TravelTag">
+    <meta property="og:image" content="@yield('og_image', asset('storage/' . setting('logo')))">
+
+    {{-- Twitter Card --}}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@yield('title', 'TravelTag') - {{ setting('tagline', 'Explore the World') }}">
+    <meta name="twitter:description" content="@yield('meta_description', 'TravelTag - India\'s leading school trip organizer. Safe, structured educational tours and student travel programs from Bangalore.')">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     
@@ -46,7 +63,7 @@
             --dark: #2C2C2C;
             --white: #FFFFFF;
             --light-blue-bg: #e8f4fd;
-            --heading-color: #000000;
+            --heading-color: #2C2C2C;
             --subheading-color: #6b7280;
         }
         
@@ -110,8 +127,8 @@
             border-radius: 8px; padding: 6px 10px;
         }
         .main-navbar .nav-link {
-            font-weight: 600; color: #fff !important; padding: .5rem 1rem !important;
-            font-size: 1.05rem; transition: .2s;
+            font-weight: 600; color: #fff !important; padding: .5rem .65rem !important;
+            font-size: .92rem; transition: .2s; white-space: nowrap;
         }
         .main-navbar .nav-link i { color: #fff !important; }
         .main-navbar .nav-link:hover, .main-navbar .nav-link.active { color: #89BFF3 !important; }
@@ -556,13 +573,11 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
+                <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item"><a class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}" href="{{ route('home') }}">Home</a></li>
                     <li class="nav-item"><a class="nav-link {{ request()->routeIs('about') ? 'active' : '' }}" href="{{ route('about') }}">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link {{ request()->routeIs('blogs.*') ? 'active' : '' }}" href="{{ route('blogs.index') }}">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link {{ request()->routeIs('gallery') ? 'active' : '' }}" href="{{ route('gallery') }}">Gallery</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle {{ request()->routeIs('programs.*') ? 'active' : '' }}" href="{{ route('programs.index') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
+                        <a class="nav-link dropdown-toggle {{ request()->routeIs('programs.*') ? 'active' : '' }}" href="{{ route('programs.index') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">Student Programs</a>
                         <ul class="dropdown-menu shadow-sm border-0">
                             @php $navCategories = \App\Models\Category::active()->orderBy('name')->get(); @endphp
                             @foreach($navCategories as $navCat)
@@ -570,9 +585,12 @@
                             @endforeach
                         </ul>
                     </li>
+                    <li class="nav-item"><a class="nav-link {{ request()->routeIs('corporates') ? 'active' : '' }}" href="{{ route('corporates') }}">For Corporates</a></li>
+                    <li class="nav-item"><a class="nav-link {{ request()->routeIs('leisure') ? 'active' : '' }}" href="{{ route('leisure') }}">Plan Your Leisure</a></li>
+                    <li class="nav-item"><a class="nav-link {{ request()->routeIs('gallery') ? 'active' : '' }}" href="{{ route('gallery') }}">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link {{ request()->routeIs('blogs.*') ? 'active' : '' }}" href="{{ route('blogs.index') }}">Blog</a></li>
                     <li class="nav-item"><a class="nav-link {{ request()->routeIs('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Contact Us</a></li>
                 </ul>
-                <a href="{{ route('contact') }}" class="btn-getintouch"><i class="bi bi-telephone-fill me-1"></i> Get In Touch</a>
             </div>
         </div>
     </nav>

@@ -1,5 +1,7 @@
 @extends('frontend.layouts.app')
-@section('title', 'Blogs')
+@section('title', 'School Travel Insights & Blog')
+@section('meta_description', 'Read insights on school trips, educational tours, student safety, and travel planning tips from TravelTag — India\'s trusted school travel platform.')
+@section('meta_keywords', 'school travel blog, educational tour tips, student trip planning, school excursion ideas, travel safety for students')
 
 @section('content')
 <section class="page-header text-center" style="background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('https://images.unsplash.com/photo-1506459225024-1428097a7e18?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover fixed;">

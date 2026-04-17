@@ -1,5 +1,7 @@
 @extends('frontend.layouts.app')
-@section('title', 'About Us')
+@section('title', 'About Us - School Travel Platform')
+@section('meta_description', 'TravelTag is India\'s most structured school travel platform. We design, manage, and execute safe educational tours for schools and institutions from Bangalore.')
+@section('meta_keywords', 'about TravelTag, school travel company Bangalore, educational tour organizer, student trip planner India, safe school travel')
 
 @push('styles')
 <style>
