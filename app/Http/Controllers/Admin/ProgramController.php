@@ -20,7 +20,7 @@ class ProgramController extends Controller
 
     public function create()
     {
-        $categories = Category::active()->get();
+        $categories = Category::active()->parents()->with('children')->orderBy('sort_order')->orderBy('name')->get();
         return view('admin.programs.create', compact('categories'));
     }
 
@@ -83,7 +83,7 @@ class ProgramController extends Controller
 
     public function edit(Program $program)
     {
-        $categories = Category::active()->get();
+        $categories = Category::active()->parents()->with('children')->orderBy('sort_order')->orderBy('name')->get();
         $program->load('images', 'itineraries');
         return view('admin.programs.edit', compact('program', 'categories'));
     }

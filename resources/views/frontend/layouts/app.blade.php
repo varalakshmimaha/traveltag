@@ -579,14 +579,34 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle {{ request()->routeIs('programs.*') ? 'active' : '' }}" href="{{ route('programs.index') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">Student Programs</a>
                         <ul class="dropdown-menu shadow-sm border-0">
-                            @php $navCategories = \App\Models\Category::active()->orderBy('name')->get(); @endphp
+                            @php
+                                $studentProgramsCat = \App\Models\Category::where('slug', 'student-programs')->first();
+                                $navCategories = $studentProgramsCat
+                                    ? \App\Models\Category::active()->where('parent_id', $studentProgramsCat->id)->orderBy('sort_order')->orderBy('name')->get()
+                                    : \App\Models\Category::active()->parents()->orderBy('sort_order')->orderBy('name')->get();
+                            @endphp
                             @foreach($navCategories as $navCat)
                                 <li><a class="dropdown-item" href="{{ route('programs.index', ['category' => $navCat->slug]) }}">{{ $navCat->name }}</a></li>
                             @endforeach
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link {{ request()->routeIs('corporates') ? 'active' : '' }}" href="{{ route('corporates') }}">For Corporates</a></li>
+                    @php
+                        $leisureCat = \App\Models\Category::where('slug', 'plan-your-leisure')->first();
+                        $leisureSubCats = $leisureCat ? \App\Models\Category::active()->where('parent_id', $leisureCat->id)->orderBy('sort_order')->orderBy('name')->get() : collect();
+                    @endphp
+                    @if($leisureSubCats->count())
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle {{ request()->routeIs('leisure') ? 'active' : '' }}" href="{{ route('leisure') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">Plan Your Leisure</a>
+                        <ul class="dropdown-menu shadow-sm border-0">
+                            @foreach($leisureSubCats as $lCat)
+                                <li><a class="dropdown-item" href="{{ route('programs.index', ['category' => $lCat->slug]) }}">{{ $lCat->name }}</a></li>
+                            @endforeach
+                        </ul>
+                    </li>
+                    @else
                     <li class="nav-item"><a class="nav-link {{ request()->routeIs('leisure') ? 'active' : '' }}" href="{{ route('leisure') }}">Plan Your Leisure</a></li>
+                    @endif
                     <li class="nav-item"><a class="nav-link {{ request()->routeIs('gallery') ? 'active' : '' }}" href="{{ route('gallery') }}">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link {{ request()->routeIs('blogs.*') ? 'active' : '' }}" href="{{ route('blogs.index') }}">Blog</a></li>
                     <li class="nav-item"><a class="nav-link {{ request()->routeIs('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Contact Us</a></li>
@@ -633,15 +653,15 @@
                     <ul class="footer-contact" style="margin-bottom: 1.5rem;">
                         <li style="margin-bottom: 0.8rem; align-items: flex-start;">
                             <i class="bi bi-geo-alt-fill" style="color: #fff; margin-top: 0.1rem;"></i>
-                            <span style="color: rgba(255,255,255,.8);">RR Nagar Bangalore</span>
+                            <span style="color: rgba(255,255,255,.8);">{{ setting('address', 'RR Nagar Bangalore') }}</span>
                         </li>
                         <li style="margin-bottom: 0.8rem;">
                             <i class="bi bi-telephone-fill" style="color: #fff;"></i>
-                            <a href="tel:+91988601872" style="color: rgba(255,255,255,.8); text-decoration: none;">+91 988601872</a>
+                            <a href="tel:{{ setting('phone', '+91988601872') }}" style="color: rgba(255,255,255,.8); text-decoration: none;">{{ setting('phone', '+91988601872') }}</a>
                         </li>
                         <li style="margin-bottom: 0.8rem;">
                             <i class="bi bi-envelope-fill" style="color: #fff;"></i>
-                            <a href="mailto:enquiry@traveltag.co.in" style="color: rgba(255,255,255,.8); text-decoration: none;">enquiry@traveltag.co.in</a>
+                            <a href="mailto:{{ setting('email', 'enquiry@traveltag.co.in') }}" style="color: rgba(255,255,255,.8); text-decoration: none;">{{ setting('email', 'enquiry@traveltag.co.in') }}</a>
                         </li>
                     </ul>
 

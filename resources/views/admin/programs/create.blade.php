@@ -19,7 +19,19 @@
                             <select name="category_id" class="form-select" required>
                                 <option value="">Select Category</option>
                                 @foreach($categories as $cat)
-                                    <option value="{{ $cat->id }}" {{ old('category_id') == $cat->id ? 'selected' : '' }}>{{ $cat->name }}</option>
+                                    @if($cat->children->count())
+                                        <optgroup label="{{ $cat->name }}">
+                                            @foreach($cat->children as $sub)
+                                                <option value="{{ $sub->id }}" {{ old('category_id') == $sub->id ? 'selected' : '' }}>
+                                                    {{ $sub->name }}
+                                                </option>
+                                            @endforeach
+                                        </optgroup>
+                                    @else
+                                        <option value="{{ $cat->id }}" {{ old('category_id') == $cat->id ? 'selected' : '' }}>
+                                            {{ $cat->name }}
+                                        </option>
+                                    @endif
                                 @endforeach
                             </select>
                         </div>
