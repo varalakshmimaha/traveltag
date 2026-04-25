@@ -832,12 +832,7 @@
                         <span>Dashboard</span>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ request()->routeIs('admin.banners.*') ? 'active' : '' }}" href="{{ route('admin.banners.index') }}">
-                        <i class="bi bi-images"></i>
-                        <span>Banners</span>
-                    </a>
-                </li>
+                {{-- Banners hidden --}}
                 <li class="nav-item">
                     <a class="nav-link {{ request()->routeIs('admin.categories.*') ? 'active' : '' }}" href="{{ route('admin.categories.index') }}">
                         <i class="bi bi-tags"></i>
