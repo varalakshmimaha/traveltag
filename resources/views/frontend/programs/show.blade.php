@@ -154,7 +154,9 @@
                     @if($program->thumbnail)
                         <img src="{{ asset('storage/' . $program->thumbnail) }}" alt="{{ $program->title }}">
                     @else
-                        <img src="{{ asset('images/2Q0A2992.JPG') }}" alt="{{ $program->title }}">
+                        <div style="width:100%;height:320px;background:linear-gradient(135deg,#e8f4fd,#c8e0f5);display:flex;align-items:center;justify-content:center;border-radius:.75rem;">
+                            <i class="bi bi-image" style="font-size:3rem;color:#89BFF3;"></i>
+                        </div>
                     @endif
                 </div>
 

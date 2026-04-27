@@ -432,7 +432,10 @@
                         @if($prog->thumbnail)
                             <img src="{{ asset('storage/' . $prog->thumbnail) }}" alt="{{ $prog->title }}">
                         @else
-                            <img src="{{ asset('images/2Q0A2660.JPG') }}" alt="{{ $prog->title }}">
+                            <div style="width:100%;height:100%;background:linear-gradient(135deg,#e8f4fd,#c8e0f5);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.5rem;">
+                                <i class="bi bi-image" style="font-size:2rem;color:#89BFF3;"></i>
+                                <span style="font-size:.75rem;color:#6b7280;font-weight:500;">No Image</span>
+                            </div>
                         @endif
                     </div>
                     <div class="dest-body">

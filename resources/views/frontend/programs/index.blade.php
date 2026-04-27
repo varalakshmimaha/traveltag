@@ -92,7 +92,9 @@
                     @if($program->thumbnail)
                         <img src="{{ asset('storage/' . $program->thumbnail) }}" alt="{{ $program->title }}">
                     @else
-                        <img src="{{ asset('images/2Q0A2992.JPG') }}" alt="{{ $program->title }}">
+                        <div style="width:100%;height:100%;background:linear-gradient(135deg,#e8f4fd,#c8e0f5);display:flex;align-items:center;justify-content:center;">
+                            <i class="bi bi-image" style="font-size:2.5rem;color:#89BFF3;"></i>
+                        </div>
                     @endif
                     <div class="dest-info">
                         <h5>{{ $program->title }}</h5>
