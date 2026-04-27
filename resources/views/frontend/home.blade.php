@@ -424,7 +424,7 @@
             <div class="section-line section-line-center"></div>
         </div>
         <div class="row g-4">
-            @php $destPrograms = \App\Models\Program::active()->with('category')->latest()->take(4)->get(); @endphp
+            @php $destPrograms = \App\Models\Program::featured()->with('category')->latest()->take(4)->get(); @endphp
             @forelse($destPrograms as $index => $prog)
             <div class="col-lg-3 col-md-6 col-6">
                 <div class="dest-card">
