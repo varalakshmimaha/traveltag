@@ -151,10 +151,10 @@
 
                 {{-- Featured Image --}}
                 <div class="featured-img">
-                    @if($program->thumbnail && file_exists(public_path('storage/' . $program->thumbnail)))
+                    @if($program->thumbnail)
                         <img src="{{ asset('storage/' . $program->thumbnail) }}" alt="{{ $program->title }}">
                     @else
-                        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1000&h=500&fit=crop" alt="{{ $program->title }}">
+                        <img src="{{ asset('images/2Q0A2992.JPG') }}" alt="{{ $program->title }}">
                     @endif
                 </div>
 
@@ -221,10 +221,10 @@
                         </h6>
                         @foreach($relatedPrograms as $pp)
                         <a href="{{ route('programs.show', $pp->slug) }}">
-                            @if($pp->thumbnail && file_exists(public_path('storage/' . $pp->thumbnail)))
+                            @if($pp->thumbnail)
                                 <img src="{{ asset('storage/' . $pp->thumbnail) }}" alt="{{ $pp->title }}">
                             @else
-                                <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=200&h=150&fit=crop" alt="{{ $pp->title }}">
+                                <img src="{{ asset('images/2Q0A3081.JPG') }}" alt="{{ $pp->title }}">
                             @endif
                             <span>{{ $pp->title }}</span>
                         </a>

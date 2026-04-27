@@ -429,10 +429,10 @@
             <div class="col-lg-3 col-md-6 col-6">
                 <div class="dest-card">
                     <div class="dest-img">
-                        @if($prog->thumbnail && file_exists(public_path('storage/' . $prog->thumbnail)))
+                        @if($prog->thumbnail)
                             <img src="{{ asset('storage/' . $prog->thumbnail) }}" alt="{{ $prog->title }}">
                         @else
-                            <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600&h=400&fit=crop" alt="{{ $prog->title }}">
+                            <img src="{{ asset('images/2Q0A2660.JPG') }}" alt="{{ $prog->title }}">
                         @endif
                     </div>
                     <div class="dest-body">

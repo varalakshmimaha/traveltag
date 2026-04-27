@@ -89,10 +89,10 @@
         <div class="dest-grid {{ $programs->count() ? 'has-items' : '' }}">
             @forelse($programs as $program)
                 <div class="dest-item">
-                    @if($program->thumbnail && file_exists(public_path('storage/' . $program->thumbnail)))
+                    @if($program->thumbnail)
                         <img src="{{ asset('storage/' . $program->thumbnail) }}" alt="{{ $program->title }}">
                     @else
-                        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=500&fit=crop" alt="{{ $program->title }}">
+                        <img src="{{ asset('images/2Q0A2992.JPG') }}" alt="{{ $program->title }}">
                     @endif
                     <div class="dest-info">
                         <h5>{{ $program->title }}</h5>
