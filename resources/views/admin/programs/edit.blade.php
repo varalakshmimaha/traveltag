@@ -113,23 +113,33 @@
             </div>
 
             <div class="card border-0 shadow-sm">
-                <div class="card-header bg-white"><h6 class="mb-0">Gallery Images</h6></div>
+                <div class="card-header bg-white"><h6 class="mb-0">Add Gallery Images</h6></div>
                 <div class="card-body">
-                    @foreach($program->images as $img)
-                    <div class="d-inline-block position-relative me-2 mb-2">
-                        <img src="{{ asset('storage/' . $img->image) }}" width="80" class="rounded">
-                        <form action="{{ route('admin.programs.deleteImage', $img) }}" method="POST" class="d-inline">
-                            @csrf @method('DELETE')
-                            <button class="btn btn-sm btn-danger position-absolute top-0 end-0" style="padding:0 5px;font-size:.7rem">x</button>
-                        </form>
-                    </div>
-                    @endforeach
-                    <input type="file" name="gallery[]" class="form-control mt-2" accept="image/*" multiple>
+                    <input type="file" name="gallery[]" class="form-control" accept="image/*" multiple>
+                    <small class="text-muted">You can select multiple images</small>
                 </div>
             </div>
         </div>
     </div>
 </form>
+
+{{-- Gallery delete forms OUTSIDE main form to prevent _method=DELETE leaking --}}
+@if($program->images->count())
+<div class="card border-0 shadow-sm mt-4">
+    <div class="card-header bg-white"><h6 class="mb-0">Current Gallery Images</h6></div>
+    <div class="card-body d-flex flex-wrap gap-2">
+        @foreach($program->images as $img)
+        <div class="position-relative">
+            <img src="{{ asset('storage/' . $img->image) }}" width="90" height="70" class="rounded" style="object-fit:cover;">
+            <form action="{{ route('admin.programs.deleteImage', $img) }}" method="POST" class="d-inline" onsubmit="return confirm('Delete this image?')">
+                @csrf @method('DELETE')
+                <button class="btn btn-sm btn-danger position-absolute top-0 end-0" style="padding:1px 6px;font-size:.7rem;line-height:1.4;">x</button>
+            </form>
+        </div>
+        @endforeach
+    </div>
+</div>
+@endif
 
 @push('scripts')
 <script>
